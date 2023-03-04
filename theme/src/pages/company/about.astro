@@ -1,0 +1,33 @@
+---
+import { TextSection } from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import HeroSection from '../../components/sections/heros/HeroSection.astro';
+
+const seo = {
+	title: 'About | Astro Odyssey Theme',
+	description: 'About Page',
+};
+---
+
+<Layout {seo}>
+	<HeroSection>
+		<div slot="text-container">
+			<h1>About L+Trash</h1>
+			<p>
+				Litteraly Trash is a monthly trash pick up sevice that for the low fee of $5/m will come and pick up your trash and recycle it properly. Instead of sending all of your trash directly to the landfill, we sort it based on boxes, plastic, food waste, and more. Say yes to L+Trash. 
+			</p>
+		</div>
+    <picture slot="image-container">
+      <img
+        src="/assets/images/home/classic-hero.png"
+        alt="Astro Odyssee"
+        id="home-hero-image"
+      />
+    </picture>
+	</HeroSection>
+  <TextSection narrow>
+    <p>
+      As said by MeckNc.Gov, “In 2016, Mecklenburg County households sent 382,677 tons or 720 pounds per person to landfills,” Litteraly Trash provides a sustainable and efficient way to prevent this much trash ending up in landfills. But what’s the answer? While visiting Italy last summer, we stayed in a small town with a population of ~2,000, called Courmayeur. Every few days, we had to walk our trash up to separate trash bins divided by plastic, food waste, cartons, and more. That’s the inspiration behind Litteraly Trash. According to Forbes, most people in the US don’t actually know how to recycle correctly. So what if we made it easier? For 5$ a month, Litteraly Trash will come and collect your trash, and sort it to recycle it properly and prevent it from ending up in landfills when it doesn’t need to.
+    </p>
+  </TextSection>
+</Layout>

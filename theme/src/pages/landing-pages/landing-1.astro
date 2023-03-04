@@ -1,0 +1,66 @@
+---
+import {Icon} from 'astro-icon'
+import {
+  AnnouncementBar,
+	Button,
+	CustomerQuoteSection,
+	ThreeColumnTextSection,
+	YouTubeEmbedSection,
+  StickyTextImageSection,
+  CtaCardSection
+} from '@littlesticks/odyssey-theme-components';
+import Layout from '../../layouts/Page.astro';
+import TextAndImageHero from '../../components/sections/heros/TextAndImageHero.astro';
+
+const seo = {
+	title: 'Landing Page #1 | Astro Odyssey Theme',
+	description: 'Landing Page #1 | Astro Odyssey Theme',
+};
+---
+
+<Layout seo={seo} >
+	<TextAndImageHero reversed>
+		<div slot="text-container">
+			<h1>Don't Reinvent the Wheel</h1>
+			<p>Join L+trash today.</p>
+		</div>
+		<div slot="btns-container">
+		</div>
+		<picture slot="image-container">
+			<img
+				src="/assets/images/landing-1/landing-hero-1.png"
+				alt="Herading"
+				id="home-hero-image"
+			/>
+		</picture>
+	</TextAndImageHero>
+
+	<CustomerQuoteSection
+		quoteText="Ummm. Trash is for weirdos."
+		customerName="Carson, Happy Customer"
+	/>
+
+	<ThreeColumnTextSection>
+		<div slot="column-1-body">
+			<h2>Why?</h2>
+			<p>
+			 L+Trash wants to help reduce unnecessary waste within the mecklendburg county, not only to help the environment but to improve the overall quality of life.
+			</p>
+		</div>
+		<div slot="column-2-body">
+			<h2>How?</h2>
+			<p>
+				Litteraly trash will come manually pick up your trash and take it back to our warehouses, where we'll sort it accordingly.
+			</p>
+		</div>
+		<div slot="column-3-body">
+			<h2>What?</h2>
+			<p>
+				Litteraly trash is a monthly paid service to help promote reycling in charlotte, North Carolina.
+			</p>
+		</div>
+	</ThreeColumnTextSection>
+
+
+</Layout>
+
